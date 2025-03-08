@@ -19,6 +19,7 @@ const App = () => {
         <About />
         <Technologies />
         <Services />
+        <div className="h-[200vh]" />
         <TimelineMotion />
       </div>
     </div>
