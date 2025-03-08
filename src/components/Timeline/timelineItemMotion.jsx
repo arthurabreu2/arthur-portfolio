@@ -22,7 +22,9 @@ export default function TimelineItemMotion({ item, isLeftSide }) {
         <motion.div
             className="relative min-h-[160px] mb-12"
             variants={chosenVariant}
-            whileInView="show"
+            initial="hidden"
+            animate="show"
+            // whileInView="show"
             viewport={{ once: false, amount: 0.05 }}
         >
             <div className="hidden md:block">
@@ -58,12 +60,8 @@ export default function TimelineItemMotion({ item, isLeftSide }) {
             flex items-center justify-center
             rounded-full border border-neutral-700 bg-white/10 text-neutral-200
             backdrop-blur-sm shadow-xl
-
-            /* Aumentado para telas pequenas */
-            h-16 w-16       /* base para mobile */
-            sm:h-20 sm:w-20 /* maior em 'sm' (>=640px) */
-
-            /* Fonte pode ser ajustada conforme desejar */
+            h-16 w-16
+            sm:h-20 sm:w-20 
             text-sm sm:text-base
           "
                 >
