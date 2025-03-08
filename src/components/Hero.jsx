@@ -130,7 +130,7 @@ const Hero = () => {
                         <div
                             className="relative group w-3/4 h-3/4
                          sm:w-3/5 sm:h-3/5 md:w-3/4 md:h-3/4
-                         rounded-lg drop-shadow-lg"
+                         rounded-lg overflow-hidden drop-shadow-lg"
                         >
                             <img
                                 src={profilePic}
