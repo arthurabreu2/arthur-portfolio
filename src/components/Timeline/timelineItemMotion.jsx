@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 const fadeLeft = {
     hidden: { x: -200, opacity: 0 },
-    show: { x: 0, opacity: 1, transition: { duration: 1.2 } },
+    show: { x: 0, opacity: 1, transition: { duration: 0.6 } },
 };
 const fadeRight = {
     hidden: { x: 200, opacity: 0 },
-    show: { x: 0, opacity: 1, transition: { duration: 1.2 } },
+    show: { x: 0, opacity: 1, transition: { duration: 0.6 } },
 };
 
 const lineGrow = {
@@ -24,7 +24,7 @@ export default function TimelineItemMotion({ item, isLeftSide }) {
             variants={chosenVariant}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: false, amount: 0.05 }}
         >
             <div className="hidden md:block">
                 {isLeftSide ? (

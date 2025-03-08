@@ -16,12 +16,12 @@ const containerVariants = {
     visible: {
         opacity: 1,
         y: 0,
-        transition: { staggerChildren: 0.2 },
+        transition: { staggerChildren: 0.1 },
     },
     exit: {
         opacity: 0,
         y: -10,
-        transition: { duration: 0.9 },
+        transition: { duration: 0.5 },
     },
 };
 
@@ -30,12 +30,12 @@ const cardVariants = {
     visible: {
         opacity: 1,
         x: 0,
-        transition: { duration: 0.8, ease: "easeInOut" },
+        transition: { duration: 0.5, ease: "easeInOut" },
     },
     exit: {
         opacity: 0,
         x: -10,
-        transition: { duration: 2.2, ease: "easeInOut" },
+        transition: { duration: 0.5, ease: "easeInOut" },
     },
 };
 
@@ -100,7 +100,7 @@ export default function Services() {
                 initial="hidden"
                 whileInView="visible"
                 exit="exit"
-                viewport={{ once: false, amount: 0.2 }}
+                viewport={{ once: false, amount: 0.1 }}
                 className="border-b border-neutral-900 pb-16"
             >
                 <motion.h1

@@ -40,7 +40,7 @@ import { useTranslation } from "react-i18next";
 
 const fadeVariant = {
     hidden: { opacity: 0, x: -20 },
-    visible: { opacity: 1, x: 0, transition: { duration: 1.4, ease: "easeInOut" } },
+    visible: { opacity: 1, x: 0, transition: { duration: 1, ease: "easeInOut" } },
 };
 
 const fadeLeftVariant = {
