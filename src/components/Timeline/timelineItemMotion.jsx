@@ -23,9 +23,8 @@ export default function TimelineItemMotion({ item, isLeftSide }) {
             className="relative min-h-[160px] mb-12"
             variants={chosenVariant}
             initial="hidden"
-            // whileInView="show"
-            // viewport={{ once: false, amount: 0.2 }}
-            animate="show"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.01 }}
         >
             <div className="hidden md:block">
                 {isLeftSide ? (
